@@ -1,38 +1,19 @@
-Overview: The overarching goal of my project is to see if different government programs that give incentives for things such as solar panels and electric car purchases are working to the extent it was planned. I will look primarily at solar panels as information on solar panels is the easiest to find consistent data on. I will research different datasets with such information to discover trends to help answer questions about the effectiveness of different municipal programs that offer rebates for residential solar panel installation specifically.
-
-Research Question(s): 
-1. In neighborhoods or areas with a significant percentage of houses with rebates, is there a sizable drop in the amount of electricity this neighborhood or area uses from the greater grid?
-
-2. What demographic and/or housing factors have the strongest correlation with a household getting a rebate for solar panels?
-
+ Overview: The overarching goal of my project is to see if different government programs that give incentives for things such as solar panels and electric car purchases are working to the extent it was planned. The goal behind a lot of people’s choice of purchasing solar panels or an electric car is to either save money or help the environment. I believe there are datasets with information such as purchase price and energy saved for things like solar panels and electric cars. I will look primarily at solar panels as information on solar panels is the easiest to find consistent data on from what I have researched so far. I will research different datasets with such information to discover trends to help answer questions about the effectiveness of different government and local programs as well that offer rebates for solar panel installation specifically.
+Research Question(s):
+1.	In neighborhoods or areas with a significant percentage of houses with solar panels, is there a sizable drop in the amount of electricity or power this neighborhood or area uses from the main energy source?
+2.	Have people who purchased electric vehicles at least five years ago seen savings compared to what they would have spent on an non-electric vehicle in that specific time frame?
+3.	What demographics are the most likely to get solar panels or electric vehicles or what are other defining factors?
 Team: Since I am working alone I will do every step.
+Datasets: 
+1. HUD USPS Vacancy dataset. This is a dataset that specifically shows vacant houses as identified by the USPS. This will be relevant when examining the power that different areas pull from the greater electric grid as we need to factor in empty houses in an area.
+2.	Energy Information Administration- Electric Power sales, revenue, and energy efficiency form dataset. This contains information from utility companies on retail sales of electricity, customer insight data, revenue information and more.
+3.	U.S. census dataset (American Community Survey). This contains very detailed population and housing information for areas throughout the country. It also has information pertaining to things like income, education, and race.
+Timeline: Week 1: Acquire three to five distinct datasets from trustworthy sources. A HUD USPS Vacancy dataset, a energy Information Administration- Electric Power sales, revenue, and energy efficiency form dataset, and a U.S. census dataset have already been found and should be helpful. The next main thing to do is to try and find more datasets that will answer questions about electric vehicle price and usage as opposed to more datasets tailored to solar panel information specifically. 
+Week 2: The datasets that I will continue to find, and convert will be loaded into the main database, assuming everything goes well. At this point I will attempt to focus on the chosen lifestyle models that we have gone over. This could change depending on the unknown datasets that may merge perfectly with the other datasets that are already included on the main document. During this stage I will also ensure ethical data handling as described in the requirements for every induvial dataset. In addition to this I will describe where the data sets came from, why they are trustworthy and will ensure that they have different formats. 
+Week 3-4: We will then perform data integration to try and join the specific parts of each dataset. Once this part has been completed, I think I will have the perfect information to create and document a specific storage and organization strategy. This could become complicated and might make several attempts with the different models and structures that have been discussed and are outlined in the requirements document. The exact process for this is currently unknown and a solution is actively being brainstormed with the aid of extraction and enrichment techniques.
+Week 5-6: After this data integration phase has been completed, we will use data cleaning and data quality techniques to change any missing values from any possible errors on the way. This should transform the new main merged dataset into something that can hopefully answer specific aspect of the research questions. It will be crucial to document when and what cleaning methods during this specific step.
+Week 6-7: The next step will be to test the overall workflow or the automated end-to-end workflow. The main thing after that will be to fully document the data and to create a dictionary for our new data that goes very in depth into the entire workflow process. This is where reproducibility and transparency will be implemented to the fullest extent in hopes of making sure anyone can understand any findings that are made.
+Week 8: The final thing to do is to make sure the GitHub repository contains all code and everything that needs to be included in the final version of the project. The goal is to create something that fully documents the entire process while learning about solar panels/electric cars and understanding how to do something like this again in the future.
+Constraints: The data sets I have chosen may take time to convert to a size that can be compatible with each other to answer a specific set of questions. The three that I included in this document all seem to have no issues so far but several of my other top choices for datasets are struggling to convert. I also might need to refine my research question further so that I know what to specifically be looking for when I begin to look for trends. If I am struggling to find trends that can build an answer to the current research questions I have then I will create more in-depth questions that can be answered. If this happens it would be a constraint that stops the progress of the project, but it can either be fixed with new research questions or different, more compatible datasets.
+Gaps: As of right now there are no foreseeable gaps except for making sure all the datasets can align and be compared adequately. What I mean by this is that some of the datasets I have researched may not be able to merge perfectly with one another and just have data that is different and incomparable. As previously mentioned, the three currently included seem to be working but this will most likely become an issue when I need to include additional datasets. I will make sure to prioritize merging my various datasets immediately as this is essential to answering my research questions. Another potential gap could come if I need to look for very specific data to supplement an answer. Some data on solar panel purchase information and total energy use could be difficult to obtain if I need to find another dataset. 
 
-Datasets: 1. HUD USPS Vacancy dataset. This is a dataset that specifically shows vacant houses as identified by the USPS. This will be relevant when examining the power that different areas pull from the greater electric grid as we need to factor in empty houses in an area.
-
-2. Energy Information Administration- Electric Power sales, revenue, and energy efficiency form dataset. This contains information from utility companies on retail sales of electricity, customer insight data, revenue information and more.
-
-3. U.S. census dataset(American Community Survey). This contains very detailed population and housing information for areas throughout the country. It also has information pertaining to things like income, education, and race.
-
-
-
-Timeline: Week 1: Acquire three distinct datasets from trustworthy sources, a HUD USPS Vacancy dataset, a energy Information Administration- Electric Power sales, revenue, and energy efficiency form dataset, and a U.S. census dataset.  After this, ethical handling will identify privacy and licensing constraints for this data.
-
-Week 2:
-A storage strategy using a currently unknown relational database will be the next thing to create. The ethical data handling review will be finished and will show how privacy, copyright, and terms of use are addressed. The acquired datasets will be loaded into the main database, assuming everything goes well.
-
-Week 3-4: We will then perform data integration to try and join the datasets. An initial data quality assessment will be documented, profiling completeness and consistency. The exact process for this is currently unknown and a solution is actively being brainstormed.
-
-Week 5-6: After this, we will use data cleaning methods to change any missing values from any possible errors on the way. The next part of the workflow process will begin by starting the extraction, integration, and cleaning scripts into one area, hopefully.
-
-Week 6-7:  The next step will be to test the overall end to end workflow. With this new and clean data, we will proceed to any modeling and evaluation questions that can be answered. The main thing after that will be to fully document the data and to create a dictionary for our new data.
-
-Week 8: The final thing to do is to make sure the gitHub repository contains all code and everything that needs to be included in the final version of the project The goal is to create a fully reproducible research package.
-
-
-
-
-
-
-Constraints: The datasets we have chosen may take time to convert to a size that can be compatible with my computer's processing capabilities. I also might need to refine my research question further so that I know what to specifically be looking for when I begin to look for trends.
-
-Gaps: As of right now there are no foreseeable gaps except for making sure all the datasets can align and be compared adequately. I will make sure to prioritize this immediately as this is essential to answering our various research questions.
